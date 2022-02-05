@@ -32,9 +32,9 @@ Project by Michał Motyl - Simple Flask web app
 ## Preparing and running dockerized app
 
 1. Build docker image from Dockerfile
-```docker run -t docker-python```
+```docker run -t docker-python .```
 2. Run our project
-```docker container run -p 5000:5000 docker-python .```
+```docker container run -p 5000:5000 docker-python ```
 3. Check if the project is avaliable on localhost
 
 ```curl localhost:5000```
