@@ -17,12 +17,12 @@ Project by Michał Motyl - Simple Flask web app
 ```ssh ubuntu@<**your_ip_address**>```
 	
 6. Install docker and git 
-<br>
+
 ```sudo apt-get install docker.io``` 
-<br>
+
 ```sudo apt-get install git```
 
-7. Clone repository 
+1. Clone repository 
 ```git clone git@github.com:mmotyl95/wsb_uslugi_i_platformy_deweloperskie_w_chmurze.git```
 
 8. Go to app directory
@@ -36,13 +36,13 @@ Project by Michał Motyl - Simple Flask web app
 2. Run our project
 ```docker container run -p 5000:5000 docker-python .```
 3. Check if the project is avaliable on localhost
-<br>
+
 ```curl localhost:5000```
-<br>
+
 ```curl localhost/hello:5000```
-<br>
+
 ```curl localhost/hello/you_name:5000```
-<br>
+
 An output should be like:
 ```
 $ curl localhost:5000
