@@ -1,8 +1,8 @@
 # .WSB Project Cloud App
 
-**README TESTOWY, ZOSTANIE UZUPEŁNONY O RZECZYWISTY PROJEKT**
+**README**
 
-This is my project for Usługi i platformy deweloperskie dla aplikacji w Chmurze
+Project by Michał Motyl - Simple Flask web app
 
 
 ## Development
