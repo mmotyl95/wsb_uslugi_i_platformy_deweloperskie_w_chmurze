@@ -1,4 +1,4 @@
-# .WSB Project Cloud App
+# WSB Project Cloud App
 
 **README**
 
@@ -8,26 +8,43 @@ Project by Michał Motyl - Simple Flask web app
 ## Development
 
 1. Logging into Azure 
-<code> az login</code>
+``` az login```
 2. Creating resource
-<code>az group create -n project_wsb -l westeurope</code>
+```az group create -n project_wsb -l westeurope```
 3. Creating virtual machine
-<code>az vm create --resource-group project_wsb --name simple_app --size "Standard_B1ls" --image "Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest" --public-ip-sku Standard --admin-username ubuntu</code>
+```az vm create --resource-group project_wsb --name simple_app --size "Standard_B1ls" --image "Canonical:0001-com-ubuntu-server-focal:20_04-lts-gen2:latest" --public-ip-sku Standard --admin-username ubuntu```
 4. Connecting to the virtual machine with ssh (it can be found in field "publicIpAddress")
-<code>ssh ubuntu@<**your_ip_address**></code>
+```ssh ubuntu@<**your_ip_address**>```
 	
 6. Install docker and git 
-<code>sudo apt-get install docker.io</code><code>sudo apt-get install git</code>
+<br>
+```sudo apt-get install docker.io``` 
+<br>
+```sudo apt-get install git```
+
 7. Clone repository 
-<code>git clone git@github.com:mmotyl95/wsb_uslugi_i_platformy_deweloperskie_w_chmurze.git</code>
+```git clone git@github.com:mmotyl95/wsb_uslugi_i_platformy_deweloperskie_w_chmurze.git```
+
+8. Go to app directory
+   `cd wsb_uslugi_i_platformy_deweloperskie_w_chmurze/projekt/app/`
+
 
 ## Preparing and running dockerized app
-1. Build docker image from Dockerfile
-<code>docker run -t docker-python<code>
-2. Run our project
-<code>docker container run -p 5000:5000 docker-python .</code>
-3. Check if the project is avaliable on localhost
-<code>curl localhost:5000</code>
-<code>curl localhost/hello:5000</code>
-<code>curl localhost/hello/you_name:5000</code>
 
+1. Build docker image from Dockerfile
+```docker run -t docker-python```
+2. Run our project
+```docker container run -p 5000:5000 docker-python .```
+3. Check if the project is avaliable on localhost
+<br>
+```curl localhost:5000```
+<br>
+```curl localhost/hello:5000```
+<br>
+```curl localhost/hello/you_name:5000```
+<br>
+An output should be like:
+```
+$ curl localhost:5000
+Witam na stronie projektu
+```
